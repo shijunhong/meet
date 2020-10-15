@@ -2,6 +2,7 @@ package com.example.framework;
 
 import android.content.Context;
 
+import com.example.framework.manager.BmobManager;
 import com.example.framework.utils.LogUtils;
 import com.example.framework.utils.SpUtils;
 
@@ -30,7 +31,8 @@ public class Framework {
     public void initFramework(Context mContext) {
         LogUtils.i("initFramework");
         SpUtils.getInstance().initSp(mContext);
-//        BmobManager.getInstance().initBmob(mContext);
+        BmobManager.getInstance().initBmob(mContext);
+
 //        CloudManager.getInstance().initCloud(mContext);
 //        LitePal.initialize(mContext);
 //        MapManager.getInstance().initMap(mContext);

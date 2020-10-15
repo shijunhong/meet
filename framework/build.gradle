@@ -1,6 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
+
+    //httpClient
+    useLibrary  rootProject.ext.dependencies["httpclient"]
+
+
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
     defaultConfig {
@@ -35,4 +40,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api rootProject.ext.dependencies["appcompat"]
     api rootProject.ext.dependencies["constraintlayout"]
+    api rootProject.ext.dependencies["bmobsdk"]
+    api rootProject.ext.dependencies["rxjava"]
+    api rootProject.ext.dependencies["rxandroid2"]
+    api rootProject.ext.dependencies["okhttp3"]
+    api rootProject.ext.dependencies["okio"]
+    api rootProject.ext.dependencies["gson"]
 }
