@@ -2,7 +2,7 @@ package com.example.framework;
 
 import android.content.Context;
 
-import com.example.framework.manager.BmobManager;
+import com.example.framework.bmob.BmobManager;
 import com.example.framework.utils.LogUtils;
 import com.example.framework.utils.SpUtils;
 

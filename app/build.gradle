@@ -9,7 +9,8 @@ android {
         //禁用png压缩
         aaptOptions.cruncherEnabled = false
     }
-
+    //httpClient
+    useLibrary  rootProject.ext.dependencies["httpclient"]
 
 
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -42,6 +43,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {

@@ -62,23 +62,23 @@ public class IndexActivity extends BaseActivity {
 
         Intent intent = new Intent();
 
-//        if (isFirstApp){
-//            //跳转引导页
-//            intent.setClass(this,GuideActivity.class);
-//            SpUtils.getInstance().putBoolean(Constants.SP_IS_FIRST_APP, false);
-//        }else {
-//            //如果不是第一次启动，判断是否曾经登录过
-//            String token = SpUtils.getInstance().getString(Constants.SP_TOKEN, "");
-//            if (TextUtils.isEmpty(token)){
-//                //跳转到登录页
-//                intent.setClass(this,LoginActivity.class);
-//            }else {
-//                //跳转到主页
-//                intent.setClass(this, MainActivity.class);
-//            }
-//        }
+        if (isFirstApp){
+            //跳转引导页
+            intent.setClass(this,GuideActivity.class);
+            SpUtils.getInstance().putBoolean(Constants.SP_IS_FIRST_APP, false);
+        }else {
+            //如果不是第一次启动，判断是否曾经登录过
+            String token = SpUtils.getInstance().getString(Constants.SP_TOKEN, "");
+            if (TextUtils.isEmpty(token)){
+                //跳转到登录页
+                intent.setClass(this,LoginActivity.class);
+            }else {
+                //跳转到主页
+                intent.setClass(this, MainActivity.class);
+            }
+        }
 
-        intent.setClass(this, TestActivity.class);
+//        intent.setClass(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

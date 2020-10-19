@@ -6,10 +6,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".test.TestActivity">
-    <com.example.framework.view.TouchPictureV
-        android:id="@+id/mTPV"
+<!--    <com.example.framework.view.TouchPictureV-->
+<!--        android:id="@+id/mTPV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/add"
+        android:text="增"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        />
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/del"
+        android:text="删"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/update"
+        android:text="改"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/query"
+        android:text="查"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

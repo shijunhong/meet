@@ -34,16 +34,18 @@
             android:theme="@style/AppThemeFull">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <!-- 主页 -->
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <!-- 登录页 -->
-        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <!-- 引导页 -->
-        <activity android:name=".ui.GuideActivity" />
+        <activity android:name=".ui.GuideActivity"
+            android:theme="@style/AppThemeFull"/>
 <!--        测试Activity-->
         <activity android:name=".test.TestActivity"/>
 
